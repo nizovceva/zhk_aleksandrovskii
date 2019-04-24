@@ -1,0 +1,133 @@
+.footer {
+    &-item {
+        position: relative;
+        min-height: 100vh;
+        color: $color-white;
+        background-image: url(../images/pic/footer-item.png);
+        background-repeat: repeat-y;
+        background-position: right center;
+        
+        &.footer-form {
+            padding: 10px 53px 53px;
+            display: flex;
+            align-items: center;
+            background-color: $color-blue-dark;
+            @media (max-width: 768px) { padding: 50px 30px; }
+
+            a {
+                color: $color-gold;
+                text-decoration: none;
+                &:hover { text-decoration: underline; }
+            }
+        }
+        &.footer-contacts {
+            padding: 61px 0 97px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            font-family: $font-family-FrizQuadrataC;
+            font-size: 14px;
+            line-height: 17px;
+            background-color: $color-blue;
+            text-align: center;
+            @media (max-width: 1200px) { padding: 50px 0; }
+            a { color: $color-gold; font-size: 28px; }
+            p { max-width: 320px; margin: 23px auto 0; letter-spacing: 0.4px; }
+            .soc { 
+                margin-top: 69px;
+                @media (max-width: 1200px) { margin-top: 30px; }
+                a { display: inline-block; margin: 0 7px; }
+                svg { max-width: 30px; max-height: 30px; }
+            }
+        }
+        &.footer-map {
+            & > * { transition: none!important; }
+            & > ymaps { min-height: 100vh; height: 100vh!important;}
+            @media (max-width: 768px) {
+                min-height: auto;
+                & > ymaps { min-height: 300px; height: 300px!important; max-height: 300px;}
+            }
+        }
+                
+        &-title {
+            position: relative;
+            width: 100%;
+            flex: 1;
+            padding: 0 5px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: $font-family-FrizQuadrataC;
+            font-size: 42px;
+            text-align: center;
+            text-transform: uppercase;
+            @media (max-width: 1200px) { font-size: 30px; }
+            @media (max-width: 900px) { font-size: 20px; }
+            
+            &:after {
+                content: '';
+                position: absolute;
+                width: 150px; height: 140px;
+                background-image: url(../images/pic/photos-item-title.png);
+                background-size: contain;
+                @media (max-width: 900px) {
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: 100px;
+                }
+            }
+        }
+
+        .logo {
+            svg {
+                max-width: 235px;
+                fill: $color-white;
+            }
+        }
+
+        .form {
+            max-width: 350px;
+            h3 {
+                font-size: 26px;
+                line-height: 30px;
+                color: #fff;
+                text-align: left;
+                margin: 0;
+            }
+            &-row {
+                & + .form-row { margin-top: 25px; }
+                &.form-row-title { margin-bottom: 73px; }
+                &.form-row-button { margin-top: 12px; }
+                &.form-row-links {
+                    margin-top: 20px;
+                    p { margin: 0; line-height: 20px; }
+                    a {
+                        font-size: 12px;
+                        & > * { display: inline; vertical-align: middle; margin-right: 5px; }
+                    }
+                }
+                input {
+                    width: 100%; height: 22px;
+                    line-height: 20px;
+                    color: $color-white;
+                    border: none;
+                    border-bottom: 1px solid $color-white;
+                    background: transparent;
+
+                    &[type="checkbox"] {
+                        width: 10px; height: 10px;
+                        margin-right: 5px;
+                        background-color: $color-white;
+                        display: inline-block;
+
+                        & + label {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

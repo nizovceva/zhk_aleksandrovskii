@@ -1,0 +1,56 @@
+// stylelint-disable scss/dollar-variable-empty-line-before
+
+// COLORS
+$color-white: #fff;
+$color-light: #fffbf0;
+$color-black: #000;
+
+$color-gold: #a87e0b;
+$color-brown: #1e0c05;
+$color-yellow: #ffd200;
+$color-blue: #101e4b;
+$color-blue-dark: #151d34;
+
+// FONTS
+$font-family-BookAntiqua: 'BookAntiqua', sans-serif;
+$font-family-FrizQuadrataC: 'FrizQuadrataC', sans-serif;
+$font-family-HaginCapsMedium: 'HaginCapsMedium', sans-serif;
+
+// typography
+$body-background: $color-white;
+$body-font-color: $color-black;
+$body-font-family: $font-family-BookAntiqua;
+$global-font-size: 1.6rem;
+$global-weight-normal: 400;
+$global-line-height: 1.5;
+
+$headers-font-color: $color-black;
+$headers-font-family: $font-family-FrizQuadrataC;
+$headers-font-weight: 700;
+
+$blockquote-border-color: $color-black;
+$blockquote-border-width: 3px;
+
+// FORMS
+$placeholder-color: $color-black;
+$input-color: $color-black;
+$input-border-color: $color-black;
+$input-border-color-focus: $color-black;
+$input-background: transparent;
+
+// BTN
+$btn-background: transparent;
+$btn-background-hover: $color-gold;
+$btn-border: $color-gold;
+$btn-border-hover: $color-gold;
+$btn-color: $color-gold;
+$btn-color-hover: $color-white;
+$btn-font-family: $font-family-FrizQuadrataC;
+
+// HR
+$hr-bg-color1: $color-white;
+$hr-bg-color2: $color-black;
+
+// MEDIA
+$media-mobile-width-min: 769px;
+$media-mobile-width-max: 768px;

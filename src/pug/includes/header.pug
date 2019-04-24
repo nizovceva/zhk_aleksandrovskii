@@ -1,0 +1,43 @@
+header(data-aos="fade-down")
+    .container-fluid
+        .header
+            ul.nav.desktop
+                li
+                    a(href="#") О доме
+                li
+                    a(href="#") Расположение
+                li
+                    a(href="#") Преимущества
+                li
+                    a(href="#") Галерея
+                li
+                    a(href="#") Документы
+            .logo
+                +svg("logo")
+            .contact.desktop
+                a.button.button-white.js-page-slideDown(href="#layout") Выбор квартир
+                a.phone(href="tel:8332714444")
+                    +svg("icon-phone")
+                    span 8332 71-44-44
+            .mobile-icon.mobile
+                button.hamburger.js-hamburger(type="button")
+                    span
+                    span
+                    span
+            .mobile-nav.mobile
+                ul.nav
+                    li
+                        a(href="#") О доме
+                    li
+                        a(href="#") Расположение
+                    li
+                        a(href="#") Преимущества
+                    li
+                        a(href="#") Галерея
+                    li
+                        a(href="#") Документы
+                .contact
+                    a.button.button-white(href="#") Выбор квартир
+                    a.phone(href="tel:8332714444")
+                        +svg("icon-phone")
+                        span 8332 71-44-44
