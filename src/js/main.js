@@ -3,9 +3,10 @@ svg4everybody();
 // @include('detect.js')
 // @include('globals.js')
 
-// @include('_animate.js')
 // @include('_sliders.js')
 // @include('_layout.js')
+
+// @include('_animate.js')
 
 $('body').on('click', '.js-hamburger', function() {
   let _this = $(this);

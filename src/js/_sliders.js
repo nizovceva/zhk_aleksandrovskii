@@ -16,5 +16,5 @@ $(document).ready(function() {
 
 function setTextArrow(slider, currentSlide) {
   var image = slider.find('.slick-slide[data-slick-index="' + currentSlide + '"]').data('image');
-	slider.parents('.section').find('.screen-image').addClass('no-duration').fadeOut(0).fadeIn(1000).attr('src', image);
+	slider.parents('.section').find('.screen-slider-bg').css('background-image', 'url(' + image + ')');
 }
